@@ -57,7 +57,7 @@ body{background: #efefef;}
 	opacity: 0.5;
 	filter: alpha(opacity=50);
 }
-#demo-list{margin-left:110px;}
+#demo-list{margin-left:110px;margin-top:30px;}
 #demo-list .waterfall{
 	float:left;width:300px;margin:0 8px;
 }
