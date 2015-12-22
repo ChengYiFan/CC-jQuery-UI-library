@@ -34,7 +34,12 @@ var json = [
 	 "imgSrc":"demo/treeview.png",
 	 "reviewUrl":"http://chengyifan.github.io/treeview/",
 	 "downloadUrl":"https://github.com/ChengYiFan/treeview/archive/gh-pages.zip",
-	 "type":"#menu"}
+	 "type":"#menu"},
+	 {"name":"JS图片放大镜效果",
+	 "imgSrc":"demo/zoom.png",
+	 "reviewUrl":"http://chengyifan.github.io/zoom/",
+	 "downloadUrl":"https://github.com/ChengYiFan/zoom/archive/gh-pages.zip",
+	 "type":"#widget"}
 	 
 	 
 	 
