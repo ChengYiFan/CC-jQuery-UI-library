@@ -91,7 +91,7 @@ body{background: #efefef;}
 	background:rgba(0,0,0,0.5);
 }
 #popup{
-	position:absolute;
+	position:fixed;
 	z-index: 9999;
 	background:#fff;
 	border:3px solid #000;
