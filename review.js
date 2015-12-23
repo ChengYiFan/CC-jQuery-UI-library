@@ -13,8 +13,8 @@ function showView(href){
     //弹出层
     var newDiv = document.createElement("div");
     newDiv.id = "popup";
-    newDiv.style.top = "80px";
-    newDiv.style.left = "40px";
+    newDiv.style.top = "50%";
+    newDiv.style.left = "50%";
     popupCenter();
     var newiframe = document.createElement("iframe");
     newiframe.src = href;
@@ -26,10 +26,12 @@ function showView(href){
 
     //弹出层居中
     function popupCenter(){
-    	var width = document.body.clientWidth -80;
-    	var height = document.body.clientHeight - 360;
+    	var width = document.body.clientWidth -100;
+    	var height = document.body.clientHeight -200;
     	newDiv.style.width = width +"px";
     	newDiv.style.height = height+ "px";
+        newDiv.style.marginTop = - height/2 + "px";
+        newDiv.style.marginLeft = -width/2 + "px";
     }
     //遮罩调整
     function setMask(){
@@ -55,7 +57,7 @@ function showView(href){
     function closePopup(){
 		document.body.removeChild(docEle("mask"));
     	document.body.removeChild(docEle("popup"));
-        document.body.style.overflow = "";
+        document.body.style.overflow = "visible";
 
 	}
 }
