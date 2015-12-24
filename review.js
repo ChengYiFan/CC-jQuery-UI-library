@@ -69,12 +69,12 @@ function showView(href){
 // 	/* Act on the event */
 // });
 $(function(){
-	$(".demo").click(function(event){
+	$(".demo").live("click",function(event){
 		var href = $(this).attr("href");
 		showView(href);
 		return false;
 	});
-	$(".view").click(function(){
+	$(".view").live("click",function(){
 		var href = $(this).attr("href");
 		showView(href);
 		return false;

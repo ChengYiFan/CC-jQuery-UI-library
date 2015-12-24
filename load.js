@@ -1,10 +1,10 @@
 
 var json = [
-	 {"name":"JS+CSS3实现带预览图幻灯片效果",
-	 "imgSrc":"demo/slider_show.png",
-	 "reviewUrl":"http://chengyifan.github.io/slideshow/",
-	 "downloadUrl":"https://github.com/ChengYiFan/slideshow/archive/gh-pages.zip",
-	 "type":"#photo"},
+ 	{"name":"JS图片放大镜效果",
+	 "imgSrc":"demo/zoom.png",
+	 "reviewUrl":"http://chengyifan.github.io/zoom/",
+	 "downloadUrl":"https://github.com/ChengYiFan/zoom/archive/gh-pages.zip",
+	 "type":"#widget"},
 	 {"name":"jQuery横向菜单鼠标悬停二级菜单",
 	 "imgSrc":"demo/navmenu.png",
 	 "reviewUrl":"http://chengyifan.github.io/navmenu/",
@@ -35,14 +35,12 @@ var json = [
 	 "reviewUrl":"http://chengyifan.github.io/treeview/",
 	 "downloadUrl":"https://github.com/ChengYiFan/treeview/archive/gh-pages.zip",
 	 "type":"#menu"},
-	 {"name":"JS图片放大镜效果",
-	 "imgSrc":"demo/zoom.png",
-	 "reviewUrl":"http://chengyifan.github.io/zoom/",
-	 "downloadUrl":"https://github.com/ChengYiFan/zoom/archive/gh-pages.zip",
-	 "type":"#widget"}
-	 
-	 
-	 
+	{"name":"JS+CSS3实现带预览图幻灯片效果",
+	 "imgSrc":"demo/slider_show.png",
+	 "reviewUrl":"http://chengyifan.github.io/slideshow/",
+	 "downloadUrl":"https://github.com/ChengYiFan/slideshow/archive/gh-pages.zip",
+	 "type":"#photo"}
+	  
 ];
 
 var json1=[
