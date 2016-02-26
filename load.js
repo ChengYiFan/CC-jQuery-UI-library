@@ -44,19 +44,19 @@ var json = [
 	  "imgSrc":"demo/order.png",
 	  "reviewUrl":"http://chengyifan.github.io/order/",
 	  "downloadUrl":"https://github.com/ChengYiFan/order/archive/gh-pages.zip",
-	  "type":"widget"
+	  "type":"#widget"
 	 },
 	 {"name":"jQuery打分插件",
 	  "imgSrc":"demo/rating.png",
 	  "reviewUrl":"http://chengyifan.github.io/rating/",
 	  "downloadUrl":"https://github.com/ChengYiFan/rating/archive/gh-pages.zip",
-	  "type":"widget"
+	  "type":"#widget"
 	 },
 	 {"name":"jQuery分页插件",
 	  "imgSrc":"demo/paginate.png",
 	  "reviewUrl":"http://chengyifan.github.io/paginate/",
 	  "downloadUrl":"https://github.com/ChengYiFan/paginate/archive/gh-pages.zip",
-	  "type":"widget"
+	  "type":"#widget"
 	 }
 	  
 ];
