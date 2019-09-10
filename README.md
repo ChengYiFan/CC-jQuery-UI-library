@@ -1,8 +1,16 @@
 # CC-jQuery-UI-library
 自定义 jQuery UI 库
 
-1. 自定义放大镜效果
-1. jQuery横向菜单鼠标悬停二级菜单
+## 自定义放大镜效果
+![zoom](https://github.com/ChengYiFan/CC-jQuery-UI-library/blob/master/demo/zoom.png)
+
+## jQuery横向菜单鼠标悬停二级菜单
+![navmenu](https://github.com/ChengYiFan/CC-jQuery-UI-library/blob/master/demo/navmenu.png)
+
+
+
+
+
 1. 带缩略图的图片浏览
 1. 日历选择控件
 1. 右键菜单控件
