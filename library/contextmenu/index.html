@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="contextMenu.css">
+	<script type="text/javascript" src="contextMenu.js"></script>
+	<script>
+		document.oncontextmenu=function(event){
+ 			setRightMenu(event,'rightMenu1');
+ 			return false;
+ 		};
+	</script>
+</head>
+<body>
+	<p>在任意位置点击右键--弹出右键菜单</p>
+	<div class="rightMenu"  id="rightMenu1" style="display:none">  
+    	<ul>
+    		<li>插入</li>
+    		<li>删除</li>
+    		<li>全部删除</li>
+    		<li class="line"><div class="hr"></div></li>
+    		<li>替换</li>
+    		<li>更新</li>
+    		<li>重点标记</li>
+    		<li>排序
+    		<ul>
+    			<li>编号</li>
+    			<li>日期</li>
+    			<li>归档编号</li>
+    		</ul>
+    		</li>
+    		<li>导入Excel</li>
+    		<li class="line"><div class="hr"></div></li>
+    		<li>全部展开</li>
+    		<li>全部叠加</li>
+    		<li>其他</li>
+    	</ul>
+    </div>
+</body>
+</html>

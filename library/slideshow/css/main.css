@@ -1,0 +1,96 @@
+*{margin: 0;padding: 0;}
+body{
+	padding: 0 50px;color:#555;
+	font-family:'Avenir Next';font-size: 14px;
+	-webkit-font-smoothing:antialiased;/*字体抗锯齿*/}
+.slider,.slider .main,.slider .main .main-i{
+	width:100%;height: 400px;position: relative;
+}
+/*幻灯片区域*/
+.slider .main{
+	overflow: hidden;
+}
+/*幻灯片切换的样式*/
+.slider .main .main-i{
+	opacity: 0;position: absolute;top:0;right: 50%;
+	-webkit-transition:all .5s;
+	z-index: 2;
+}
+.slider .main .main-i_right{
+	right:-50%;
+}
+.slider .main .main-i h2,.slider .main .main-i h3{
+	opacity: 0;
+	-webkit-transition:all 1s .8s;
+}
+.slider .main .main-i h2{margin-right: 45px;}
+.slider .main .main-i h3{margin-right: -45px;}
+.slider .main .main-i_active,#main_background{
+	opacity:1;right: 0;
+}
+#main_background{
+	z-index: 1;
+}
+.slider .main .main-i_active h2,.slider .main .main-i_active h3{
+	margin-right: 0;
+	opacity: 1;
+}
+
+.slider .main .main-i .caption{
+	position: absolute;right:50%;top:30%;z-index: 9;
+	margin-right:13%;
+}
+.slider .main .main-i .caption h2{
+	font-size: 40px;line-height: 50px;color: #B5B5B5;
+	text-align:right;
+}
+.slider .main .main-i .caption h3{
+	font-size: 70px;line-height: 70px;color: #000;text-align:right;
+	font-family: 'Open Sans Condensed';
+}
+.slider .main .main-i img{
+	width:100%;position: absolute;left: 0;top: 0;z-index: 1;
+}
+/*控制按钮区域*/
+.slider .ctrl{
+	width: 100%;height: 13px;line-height: 13px;
+	text-align: center;position: absolute;bottom: -13px;
+}
+.slider .ctrl .ctrl-i{
+	display: inline-block;height: 13px;width: 150px;
+	background-color: #666;box-shadow: 0 1px 1px rgba(0,0,0,.3);
+	position: relative;margin-left:1px; 
+}
+.slider .ctrl .ctrl-i img{
+	width: inherit;position: absolute;left: 0;bottom: 50px;
+	z-index: 3;opacity: 0;
+	-webkit-transition:all .2s;
+	-moz-transition:all .2s;
+}
+/*hover到控制按钮的样式*/
+.slider .ctrl .ctrl-i:hover{
+	background-color: #f0f0f0;
+}
+.slider .ctrl .ctrl-i:hover img{
+	bottom:13px;
+	/*图片倒影样式*/
+	-webkit-box-reflect:below 0px -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(transparent),
+		color-stop(50%,transparent),
+		to(rgba(255,255,255,.3))
+	);
+	opacity: 1;
+}
+/*active 当前展现的状态*/
+.slider .ctrl .ctrl-i_active,.slider .ctrl .ctrl-i_active:hover{
+	background-color:#000;
+}
+.slider .ctrl .ctrl-i_active:hover img{
+	opacity: 0;
+}
+
+
+

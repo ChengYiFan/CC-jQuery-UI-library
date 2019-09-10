@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="tree.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="treeview.js"></script>
+</head>
+<body>
+	<ul id="treeview" class="filetree">
+    	<li><span class="book">父节点1</span>
+    		<ul>
+    			<li><span class="book">父节点11</span>	
+    				<ul>
+    					<li><span class="file"><a href="javascript:void(0)">子节点111</a></span></li>
+    					<li><span class="file"><a href="javascript:void(0)">子节点112</a></span></li>
+    				</ul>
+    			</li>
+ 				<li><span class="file"><a href="javascript:void(0)">子节点12</a></span></li>
+    			</c:forEach>
+    		</ul>	
+    	</li>
+    	<li><span class="book">父节点2</span>
+			<ul>
+				<li><span class="file"><a href="javascript:void(0)">子节点21</a></span></li>
+				<li><span class="file"><a href="javascript:void(0)">子节点22</a></span></li>
+				<li><span class="file"><a href="javascript:void(0)">子节点23</a></span></li>
+			</ul>
+    	</li>
+    	<li><span class="file">没有子节点</span></li>
+    	</c:forEach>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>结算</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/order.css">
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+</head>
+<body>
+	
+	<div class="main">
+		<div class="boundary">
+			<!--商品列表-->
+			<div class="section">
+				<div class="section-title">
+					<span class="title-label">商品列表</span>
+					<span class="fr">提交订单后请您及时结算</span>
+				</div>
+				<div class="section-body clearfix">
+					<ul class="order-book-list">
+						<li class="clearfix">
+							<span class="ib w20 tl fl">1.</span>
+							<a href="#" class="ib w600 ws fl">第一个商品</a>
+							<span class="fl tl ib w100">
+								<span class="book-num-minus"></span>
+								<input type="text" class="edit-book-num" value="1"></input>
+								<span class="book-num-plus"></span></span>
+							<span class="fl tc ib w100 unitPrice">88.0元</span>
+							<a href="#" class="ib w66 ws fr tr delete-book">删除</a>
+						</li>
+						<li class="clearfix">
+							<span class="ib w20 tl fl">2.</span>
+							<a href="#" class="ib w600 ws fl">第二个商品</a>
+							<span class="fl tl ib w100">
+								<span class="book-num-minus"></span>
+								<input type="text" class="edit-book-num" value="2"></input>
+								<span class="book-num-plus"></span></span>
+							<span class="fl tc ib w100 unitPrice">50.0元</span>
+							<a href="#" class="ib w66 ws fr tr delete-book">删除</a>
+						</li>
+						<li class="clearfix">
+							<span class="ib w20 tl fl">3.</span>
+							<a href="#" class="ib w600 ws fl">第三个商品</a>
+							<span class="fl tl ib w100">
+								<span class="book-num-minus"></span>
+								<input type="text" class="edit-book-num" value="2"></input>
+								<span class="book-num-plus"></span></span>
+							<span class="fl tc ib w100 unitPrice">76.0元</span>
+							<a href="#" class="ib w66 ws fr tr delete-book">删除</a>
+						</li>
+						<li class="clearfix">
+							<span class="ib w20 tl fl">4.</span>
+							<a href="#" class="ib w600 ws fl">第四个商品</a>
+							<span class="fl tl ib w100">
+								<span class="book-num-minus"></span>
+								<input type="text" class="edit-book-num" value="2"></input>
+								<span class="book-num-plus"></span></span>
+							<span class="fl tc ib w100 unitPrice">100.0元</span>
+							<a href="#" class="ib w66 ws fr tr delete-book">删除</a>
+						</li>
+						<li class="clearfix">
+							<span class="ib w20 tl fl">5.</span>
+							<a href="#" class="ib w600 ws fl">第五个商品</a>
+							<span class="fl tl ib w100">
+								<span class="book-num-minus"></span>
+								<input type="text" class="edit-book-num" value="2"></input>
+								<span class="book-num-plus"></span></span>
+							<span class="fl tc ib w100 unitPrice">99.0元</span>
+							<a href="#" class="ib w66 ws fr tr delete-book">删除</a>
+						</li>
+					</ul>
+				</div>
+				<div class="section-footer section-footer-midHeight mtm1">
+					<span class="order-pay ml20">商品总件数：<em id="book-num">3</em>件</span>
+					<span class="order-pay fr mr32">
+						<span>共计<em id="order-sum">480.0</em>元</span>
+					</span>
+				</div>
+			</div>
+
+		</div>
+		<!--boundary end-->
+	</div>
+	<!--main end-->
+	<script type="text/javascript" src="js/order.js"></script>
+</body>
+</html>

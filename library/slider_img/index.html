@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	*{margin:0;padding:0;}
+	body{background-size:cover;}
+	li{list-style-type:none;float:left;}
+	#slider{width:660px;height:370px;margin:100px auto 0;position:relative;overflow:hidden;}
+	/*big images area*/
+	#slider .slider-ul{width:510%;position:absolute;left:0;top:0;}
+	#slider .slider-ul li{width:660px;height:370px;}
+	#slider .slider-ul li img{width:660px;height:370px;}
+	/*small images area*/
+	#slider .mask{width:660px;height:70px;background:#000;position:absolute;left:0;bottom:0;}
+	#slider .mask .mask-ul{width:560px;height:70px;position:absolute;left:60px;top:0;}
+	#slider .mask .mask-ul li{width:96px;height:46px;border:2px solid #000;margin:10px 10px 10px 0px;cursor:pointer;}
+	#slider .mask .mask-ul li img{width:96px;height:46px;cursor:hand;}
+	
+	#slider .mask .mask-ul li.active{border:2px solid #fff;}
+	
+	/*hover*/
+	#slider .mask .mask-ul li:hover{border:2px solid #fff;}
+  </style>
+  <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+  <script type="text/javascript">
+	//alert($);
+	$(function(){
+		/*$(".mask-ul li").click(function(){
+			var _this = $(this);
+			_this.addClass("active").siblings().removeClass("active");
+			var index = _this.index();
+			var moveX = -660*index;
+			$(".slider-ul").animate({left:moveX},500);
+		});
+		*/
+		var t = 
+		$(".mask-ul li").hover(function(){
+			var _this = $(this);
+			_this.addClass("active").siblings().removeClass("active");
+			var index = _this.index();
+			var moveX = -660*index;
+			$(".slider-ul").animate({left:moveX},500);
+		},function(){
+		
+		});
+	});
+
+  </script>
+ </head>
+ <body>
+	<div id="slider">
+		<!--big images area-->
+		<ul class="slider-ul">
+			<li><img src="img/1.jpg" alt="banner1"/></li>
+			<li><img src="img/2.jpg" alt="banner2"/></li>
+			<li><img src="img/3.jpg" alt="banner3"/></li>
+			<li><img src="img/4.jpg" alt="banner4"/></li>
+			<li><img src="img/1.jpg" alt="banner1"/></li>
+		</ul>
+		<!--small images area-->
+		<div class="mask">
+			<ul class="mask-ul">
+				<li class="active"><img src="img/1.jpg" alt="banner1"/></li>
+				<li><img src="img/2.jpg" alt="banner1"/></li>
+				<li><img src="img/3.jpg" alt="banner1"/></li>
+				<li><img src="img/4.jpg" alt="banner1"/></li>
+				<li><img src="img/1.jpg" alt="banner1"/></li>
+			</ul>
+		</div>
+	</div>
+ </body>
+</html>

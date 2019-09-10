@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Preview SlideShow</title>
+	<link type="text/css" href="css/main.css" rel="stylesheet"/>
+	<script src="js/sliderPicture.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+<body>
+	<div class="slider">
+		<!--0.修改VIEW转换为模版Template,关键字替换，增加模版ID-->
+		<div class="main" id="template_main">
+			<div class="main-i {{css}}" id="main_{{index}}">
+				<div class="caption">
+					<h2>{{h2}}</h2>
+					<h3>{{h3}}</h3>
+				</div>
+				<img src="images/{{index}}.jpg" alt="" class="picture">
+			</div>
+		</div>
+		<div class="ctrl" id="template_ctrl">
+			<a href="javascript:switchSlider({{index}});" class="ctrl-i" id="ctrl_{{index}}">
+				<img src="images/{{index}}.jpg" alt="">
+			</a>
+		</div>
+	</div>
+</body>
+</html>

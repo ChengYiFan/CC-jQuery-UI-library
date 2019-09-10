@@ -1,72 +1,72 @@
 
 var json = [
- 	{"name":"JS图片放大镜效果",
-	 "imgSrc":"demo/zoom.png",
-	 "reviewUrl":"http://chengyifan.github.io/zoom/",
-	 "downloadUrl":"https://github.com/ChengYiFan/zoom/archive/gh-pages.zip",
-	 "type":"#widget"},
-	 {"name":"jQuery横向菜单鼠标悬停二级菜单",
-	 "imgSrc":"demo/navmenu.png",
-	 "reviewUrl":"http://chengyifan.github.io/navmenu/",
-	 "downloadUrl":"https://github.com/ChengYiFan/navmenu/archive/gh-pages.zip",
-	 "type":"#menu"},
-	 {"name":"带缩略图的图片浏览",
-	 "imgSrc":"demo/slider_img.png",
-	 "reviewUrl":"http://chengyifan.github.io/slider_img/",
-	 "downloadUrl":"https://github.com/ChengYiFan/slider_img/archive/gh-pages.zip",
-	 "type":"#photo"},
-	{"name":"日历选择控件",
-	 "imgSrc":"demo/datepicker.png",
-	 "reviewUrl":"http://chengyifan.github.io/datepicker/",
-	 "downloadUrl":"https://github.com/ChengYiFan/datepicker/archive/gh-pages.zip",
-	 "type":"#widget"},
-	{"name":"右键菜单控件",
-	 "imgSrc":"demo/contextmenu.png",
-	 "reviewUrl":"http://chengyifan.github.io/contextmenu/",
-	 "downloadUrl":"https://github.com/ChengYiFan/contextmenu/archive/gh-pages.zip",
-	 "type":"#menu"},
-	 {"name":"选项卡插件",
-	 "imgSrc":"demo/tabs.png",
-	 "reviewUrl":"http://chengyifan.github.io/tabs/",
-	 "downloadUrl":"https://github.com/ChengYiFan/tabs/archive/gh-pages.zip",
-	 "type":"#menu"},
-	{"name":"jQuery树形菜单插件",
-	 "imgSrc":"demo/treeview.png",
-	 "reviewUrl":"http://chengyifan.github.io/treeview/",
-	 "downloadUrl":"https://github.com/ChengYiFan/treeview/archive/gh-pages.zip",
-	 "type":"#menu"},
-	{"name":"JS+CSS3实现带预览图幻灯片效果",
-	 "imgSrc":"demo/slider_show.png",
-	 "reviewUrl":"http://chengyifan.github.io/slideshow/",
-	 "downloadUrl":"https://github.com/ChengYiFan/slideshow/archive/gh-pages.zip",
-	 "type":"#photo"},
-	 {"name":"jQuery订单结算插件",
+ 	{
+ 	  "name":"JS图片放大镜效果",
+	  "imgSrc":"demo/zoom.png",
+	  "reviewUrl":"library/zoom/index.html",
+	  "type":"#widget"
+	},
+	{
+		"name":"jQuery横向菜单鼠标悬停二级菜单",
+	  "imgSrc":"demo/navmenu.png",
+	  "reviewUrl":"library/navmenu/index.html",
+	  "type":"#menu"
+	},
+	{
+		"name":"带缩略图的图片浏览",
+	  "imgSrc":"demo/slider_img.png",
+	  "reviewUrl":"library//slider_img/index.html",
+	  "type":"#photo"
+	},
+	{
+		"name":"日历选择控件",
+	  "imgSrc":"demo/datepicker.png",
+	  "reviewUrl":"library/datepicker/index.html",
+	  "type":"#widget"
+	},
+	{
+		"name":"右键菜单控件",
+	  "imgSrc":"demo/contextmenu.png",
+	  "reviewUrl":"library/contextmenu/index.html",
+	  "type":"#menu"
+	},
+	{
+		"name":"选项卡插件",
+	  "imgSrc":"demo/tabs.png",
+	  "reviewUrl":"library/tabs/index.html",
+	  "type":"#menu"
+	},
+	{
+		"name":"jQuery树形菜单插件",
+	  "imgSrc":"demo/treeview.png",
+	  "reviewUrl":"library/treeview/index.html",
+	  "type":"#menu"
+	},
+	{
+		"name":"JS+CSS3实现带预览图幻灯片效果",
+	  "imgSrc":"demo/slider_show.png",
+	  "reviewUrl":"library/slideshow/index.html",
+	  "type":"#photo"
+	},
+	{
+		"name":"jQuery订单结算插件",
 	  "imgSrc":"demo/order.png",
-	  "reviewUrl":"http://chengyifan.github.io/order/",
-	  "downloadUrl":"https://github.com/ChengYiFan/order/archive/gh-pages.zip",
+	  "reviewUrl":"library/order/index.html",
 	  "type":"#widget"
 	 },
-	 {"name":"jQuery打分插件",
+	 {
+	 	"name":"jQuery打分插件",
 	  "imgSrc":"demo/rating.png",
-	  "reviewUrl":"http://chengyifan.github.io/rating/",
-	  "downloadUrl":"https://github.com/ChengYiFan/rating/archive/gh-pages.zip",
+	  "reviewUrl":"library/rating/index.html",
 	  "type":"#widget"
 	 },
-	 {"name":"jQuery分页插件",
+	 {
+	 	"name":"jQuery分页插件",
 	  "imgSrc":"demo/paginate.png",
-	  "reviewUrl":"http://chengyifan.github.io/paginate/",
-	  "downloadUrl":"https://github.com/ChengYiFan/paginate/archive/gh-pages.zip",
+	  "reviewUrl":"library/paginate/index.html",
 	  "type":"#widget"
 	 }
 	  
-];
-
-var json1=[
-	 {"name":"",
-	 "imgSrc":"",
-	 "reviewUrl":"",
-	 "downloadUrl":"",
-	 "type":""},
 ];
 
 var html = "<div class='waterfall'><ul>";
@@ -97,7 +97,7 @@ function load_html(data){
 		var lis = "<li><a href='"+el.reviewUrl+"' class='demo'>"+
 		   "<img src='"+el.imgSrc+"' alt='"+el.name+"'/>"+
 		   "</a><p><a class='view' href='"+el.reviewUrl+"'>"+viewimg+"</a>"+
-		   "<a class='download' href='"+el.downloadUrl+"'>"+downloadimg+"</a>"+el.name+"</p></li>";
+		   el.name+"</p></li>";
 		switch(flag){
 			case 0:
 				$(".waterfall").eq(0).find("ul").append(lis);

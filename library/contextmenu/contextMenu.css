@@ -1,0 +1,59 @@
+@CHARSET "UTF-8";
+/**
+* 鼠标右键样式文件
+* 2013年12月10日
+* 程一帆
+**/
+*{margin:0;padding:0;}		
+.rightMenu{
+	position:absolute;  
+	top:-999px;
+	left:-999px;
+    font:12px/1.5 "宋体";  
+}
+.rightMenu .hr{
+	height:1px;
+	width:100%;
+	background-color: #91c0ff;
+	padding:0;
+	margin-top:0;
+}
+.rightMenu ul{
+	list-style-type:none; 
+	padding:2px; 
+	margin:0;
+	background:url(images/rm.png) repeat-y;  
+	border:1px solid #979797; 
+	border-radius: 5px;
+	width:200px;
+}
+.rightMenu ul li{
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	padding-left:30px;
+	height:19px;  
+	cursor:hand;
+	line-height: 20px;
+}
+.sub{
+	background-repeat:no-repeat;  
+    background-position:185px 9px; 
+    background-image:url(images/ArrowR.gif);  
+}
+.rightMenu ul li.line{
+	padding-top:2px;
+	height:5px;
+	cursor:default;
+}
+.rightMenu ul ul{
+	width:100px;
+	display:none;
+	position:absolute; 
+}
+.rightMenu ul ul li{
+	color:black;
+}
+.active{
+	background-color:#316ac5;
+	color:white;
+}

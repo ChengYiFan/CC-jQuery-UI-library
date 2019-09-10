@@ -1,0 +1,18 @@
+/* section */
+.section{border:1px solid #D9DBDE;border-radius: 2px;margin-bottom:12px;}
+.section .section-title,.section .section-footer{background: #fff;padding:0 12px;}
+.section .section-title{height:42px;line-height: 42px;border-bottom: 1px solid #D9DBDE;}
+.section .section-body{line-height: 42px;padding-left:32px;}
+.section .section-footer{height:56px;line-height: 56px;border-top:1px solid #D9DBDE;}
+.section .section-footer-midHeight{height:40px;line-height: 40px;}
+.section .section-footer-minHeight{height:14px;}
+/* 订单列表 */
+.order-book-list li{font-size:12px;margin-right:32px;border-bottom: 1px solid #D9DBDE;}
+.order-book-list li .delete-book{color:#FD8174;}
+.order-book-list li input.edit-book-num{text-align: center;width:40px;height:22px;line-height: 22px;border:1px solid #D9DBDE;border-radius:2px;}
+.order-book-list li input.edit-book-num:focus{border:1px solid #1894FD;color:#2E3033;}
+.order-book-list li .book-num-minus,.order-book-list li .book-num-plus{background:url(../images/ico-book-num-edit.png) no-repeat;width:10px;height:10px;display:inline-block;cursor:pointer;}
+.order-book-list li .book-num-minus{background-position: 0 -10px;}
+
+.order-pay{color:#2E3033;}
+.order-pay em{color:#FD8174;padding:0 6px;}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>快来打分吧</title>
+	<style>
+		ul,li{list-style: none;}
+		.ico-appo{background: url(images/ico-appo.png) no-repeat;}
+		.ico-star-gold{background-position: -35px -55px;vertical-align: middle;width:20px;height:20px;}
+		.ico-star-gray{background-position: -57px -55px;vertical-align: middle;width:20px;height:20px;}
+		.rating-list{
+
+		}
+		.rating-list li{
+			float:left;margin-right:8px;
+		}
+		.rating-list li span{display: none;}
+		.rating-score{float:left;font-size:14px;margin-left:30px;}
+	</style>
+</head>
+<body>
+	<h4>您对本次购物还满意吗，打个分吧</h4>
+	<ul id="rating-operate" class="rating-list"></ul>
+	<span class="rating-score"></span>
+
+	<script src="js/jquery-2.1.4.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/rating.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

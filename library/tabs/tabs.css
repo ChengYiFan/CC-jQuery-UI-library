@@ -1,0 +1,59 @@
+body{font-size: 13px;}
+ul{list-style-type:none;}
+
+.tabs{
+	width:350px;width:auto!improtant;
+	border:1px solid #aaaaaa;
+	padding:5px;
+	border-radius: 4px;
+}
+.tabs ul{
+	margin: 0;padding: .2em .2em 0;border: 1px solid #aaaaaa;
+	background:url(images/ul_bg.png) 50% 50% repeat;height:28px;
+	border-radius: 4px;
+}
+.tabs li{
+	float:left;position:relative;
+	margin:1px .2em 0 0;
+	border-bottom-width:0;
+	padding:4px 0 0;
+	white-space:nowrap;
+	font-weight: normal;
+	color: #555555;
+	height:22px;
+	border-radius: 3px 3px 0 0;
+}
+.tabs li a{color:#333;font-size:13px;line-height: 22px;}
+.li_default{
+	border: 1px solid #d3d3d3;
+	background:url(images/li_bg_0.png) 50% 50% repeat-x;
+}
+.tabs li.li_selected{
+	background:url(images/li_bg_s.png) 50% 50% repeat-x;
+	border: 1px solid #aaaaaa;	
+	border-bottom-width:0;
+	padding-bottom:1px;
+	margin-bottom:-1px;
+}
+.li_selected a{
+	cursor:text;
+}
+.li_hover{
+	background:url(images/li_bg_2.png) 50% 50% repeat-x;
+	border: 1px solid #555555;
+}
+	
+.tabs a{
+	text-decoration:none;
+	padding:.5em 1em;
+	height:15px;
+}
+.panel{
+	display: none;
+	border-width: 0;
+	padding: 1em 1.4em;
+	background: none;
+}
+.panel_active{
+	display: block;
+}
